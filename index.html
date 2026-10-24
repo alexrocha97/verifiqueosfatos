@@ -1,172 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Verifique os Fatos - Debate Presidencial 2027</title>
-  <link rel="stylesheet" href="/normalize.css">
-  <link rel="stylesheet" href="/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verifique os Fatos — [FATÔMETRO APLICADO AO DONO]</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background-image: radial-gradient(circle at 50% 20%, #1a2333 0%, #0d1117 70%);
+  }
+  .stamp {
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: #8b949e;
+    text-transform: uppercase;
+    border: 1px dashed #8b949e;
+    padding: 6px 14px;
+    border-radius: 6px;
+    margin-bottom: 28px;
+    animation: blink 1.6s infinite;
+  }
+  @keyframes blink { 50% { opacity: .35; } }
+  h1 {
+    font-size: clamp(34px, 7vw, 64px);
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+  h1 span { color: #f85149; }
+  .sub { color: #8b949e; margin-bottom: 36px; text-align: center; }
+  .card {
+    width: 100%;
+    max-width: 640px;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 24px;
+  }
+  .label {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #8b949e;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .fact { font-size: 20px; line-height: 1.5; margin-bottom: 24px; }
+  .fatometro {
+    display: flex;
+    height: 22px;
+    border-radius: 11px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .fatometro div { height: 100%; }
+  .verdadeiro { background: #3fb950; width: 0%; }
+  .parcial    { background: #d29922; width: 0%; }
+  .falso      { background: #f85149; width: 0%; transition: width 2s ease-out; }
+  .legend {
+    display: flex;
+    gap: 18px;
+    font-size: 13px;
+    color: #8b949e;
+    margin-bottom: 18px;
+  }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+  .verdicto {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 800;
+    color: #0d1117;
+    background: #f85149;
+    padding: 8px 22px;
+    border-radius: 8px;
+    transform: rotate(-3deg);
+    animation: slam .4s ease-out both, wobble 2.4s ease-in-out infinite 2.4s;
+  }
+  @keyframes slam { from { transform: scale(3) rotate(-3deg); opacity: 0; } to { transform: scale(1) rotate(-3deg); opacity: 1; } }
+  @keyframes wobble { 25% { transform: rotate(-5deg); } 75% { transform: rotate(-1deg); } }
+  .nota { font-size: 14px; color: #8b949e; line-height: 1.6; margin-top: 18px; }
+  .conta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    max-width: 640px;
+    width: 100%;
+  }
+  .conta div {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+  }
+  .conta b { display: block; font-size: 26px; color: #f85149; }
+  .conta small { color: #8b949e; font-size: 12px; letter-spacing: 1px; }
+  .rodape {
+    margin-top: 36px;
+    text-align: center;
+    font-size: 13px;
+    color: #484f58;
+    line-height: 1.7;
+  }
+  .marquee {
+    max-width: 640px;
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #30363d;
+    border-bottom: 1px solid #30363d;
+    padding: 10px 0;
+    margin-bottom: 24px;
+  }
+  .marquee span {
+    display: inline-block;
+    white-space: nowrap;
+    animation: rolar 14s linear infinite;
+    color: #d29922;
+    font-weight: 600;
+  }
+  @keyframes rolar { from { transform: translateX(100vw); } to { transform: translateX(-100%); } }
+</style>
 </head>
 <body>
-  <div class="layout">
-    <header>
-      <h1>🔍 Verifique os Fatos</h1>
-      <h2>Um projeto feito pela comunidade para a comunidade. Acompanhe a checagem em tempo real das falas e propostas dos candidatos a presidente em 2026</h2>
-    </header>
 
-    <main></main>
+  <div class="stamp">◼ site fora do ar temporariamente</div>
+
+  <h1>Verifique <span>os Fatos</span><br>agora checa o dono</h1>
+  <p class="sub">A régua vale pra todos. A régua chegou nela.</p>
+
+  <div class="marquee"><span>⚠ FATÔMETRO INSTALADO NO ALVO — A MESMA RÉGUA VALE PARA TODOS OS CANDIDATOS E PARA O DONO DESTE SITE ⚠</span></div>
+
+  <div class="card">
+    <div class="label">Checagem nº 001 · ao vivo</div>
+    <p class="fact">“O dono deste site é um cavalheiro íntegro que nunca devolveu uma dívida afetiva.”</p>
+
+    <div class="label">Fatômetro</div>
+    <div class="fatometro">
+      <div class="verdadeiro"></div>
+      <div class="parcial"></div>
+      <div class="falso" id="barra"></div>
+    </div>
+    <div class="legend">
+      <span><i class="dot" style="background:#3fb950"></i>Verdadeiro</span>
+      <span><i class="dot" style="background:#d29922"></i>Parcial</span>
+      <span><i class="dot" style="background:#f85149"></i>Falso</span>
+    </div>
+
+    <div class="verdicto">FALSO</div>
+
+    <p class="nota">
+      A fala contradiz os dados disponíveis. A fala em questão era a minha mãe,
+      e eu não classificaria a conduta como “parcial” por exagero — foi total.
+      Cada verificação explica onde foi conferido: <b>no coração.</b>
+    </p>
   </div>
 
-  <script>
-    const labels = {
-      // name
-      n: {
-        1: 'Lula',
-        2: 'Flávio',
-      },
-      // checks
-      c: {
-        1: 'Verdadeiro',
-        2: 'Falso',
-        3: 'Parcial'
-      },
-      // images
-      i: {
-        1: 'lula.jpg',
-        2: 'flavio.webp',
-      }
-    };
+  <div class="conta">
+    <div><b id="vistorias">0</b><small>VERIFICAÇÕES FEITAS NO DONO</small></div>
+    <div><b>100%</b><small>TAXA DE FALSO</small></div>
+    <div><b>R$ 0</b><small>INDENIZAÇÃO PAGA ATÉ AGORA</small></div>
+  </div>
 
-    // Keep state in memory
-    let currentPosts = [];
+  <div class="rodape">
+    Um projeto feito pela comunidade para a vingançA.<br>
+    A mesma régua vale para todos os candidatos. Só classificamos o que pode ser<br>
+    conferido com dados: opiniões do dono ficam de fora.<br><br>
+    [ deface por pedido da filha — sem afeto, apenas dados ]
+  </div>
 
-    function getLS() {
-      try {
-        return JSON.parse(localStorage.getItem('data')) || [];
-      } catch {
-        return [];
-      }
-    }
-
-    function createCardHTML(item, index) {
-      return `
-        <article class="article-card" style="--animation-order: ${index};">
-          <div class="card-header">
-            <img src="/${labels.i[item.n]}" alt="Foto de perfil do ${labels.n[item.n]}" decoding="async" loading="lazy"/>
-            <div>
-              <div class="name">${labels.n[item.n]}</div>
-              <div class="badge check" data-type="${item.c}">${labels.c[item.c]}</div>
-            </div>
-          </div>
-          <div class="card-body">
-            <p class="card-title">Disse que: ${escapeHTML(item.t)}</p>
-            <p class="card-text">${escapeHTML(item.v)}</p>
-          </div>
-        </article>
-      `;
-    }
-
-    function render(newData, containerSelector = 'main') {
-      const items = newData || getLS();
-
-      if (!items || !items.length) {
-        document.querySelector(containerSelector).innerHTML = '';
-      }
-
-      // 1. Skip completely if the content hasn't changed at all
-      if (JSON.stringify(items) === JSON.stringify(currentPosts)) {
-        return;
-      }
-
-      const mainTarget = document.querySelector(containerSelector);
-      if (!mainTarget) return;
-
-      // Ensure the .article-grid wrapper exists
-      let grid = mainTarget.querySelector('.article-grid');
-      if (!grid) {
-        grid = document.createElement('div');
-        grid.className = 'article-grid';
-        mainTarget.appendChild(grid);
-      }
-
-      // 2. If memory is empty (initial page load), render everything
-      if (currentPosts.length === 0) {
-        grid.innerHTML = items.map((item, index) => createCardHTML(item, index)).join('');
-      } else {
-        // 3. Otherwise, append/prepend ONLY the new items to avoid re-rendering existing DOM nodes
-        const newItems = items.slice(currentPosts.length);
-        if (newItems.length > 0) {
-          const fragment = document.createDocumentFragment();
-          
-          newItems.forEach((item, idx) => {
-            const indexInTotal = currentPosts.length + idx;
-            const tempDiv = document.createElement('div');
-            tempDiv.innerHTML = createCardHTML(item, indexInTotal).trim();
-            fragment.appendChild(tempDiv.firstChild);
-          });
-
-          // Change to prepend() if newest posts should appear at the top
-          grid.appendChild(fragment); 
-        }
-      }
-
-      // Update in-memory reference
-      currentPosts = items;
-      // Scroll
-      setTimeout(() => window.scrollTo(0, document.body.scrollHeight), 400);
-      
-    }
-
-    function escapeHTML(str) {
-      return str.replace(/[&<>'"]/g, 
-        tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
-      );
-    }
-
-    function generateAlphanumeric(length = 6) {
-      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-      let result = '';
-      for (let i = 0; i < length; i++) {
-        result += chars.charAt(Math.floor(Math.random() * chars.length));
-      }
-      return result;
-    }
-    
-    const DELAY = 15000;
-    const NOW = new Date();
-    const INTERVAL = DELAY + NOW.getSeconds();    
-    const URI_POSTS_JSON = '/posts.json';
-
-    function update() {
-      fetch(`${URI_POSTS_JSON}?v=${generateAlphanumeric()}`)
-        .then(r => r.json())
-        .then(data => {
-          if (Array.isArray(data) && !data.length) {
-            window.localStorage.removeItem('data');
-            render([]);
-          }
-
-          if (data && data.length) {
-            // Save to localStorage and update DOM incrementally
-            localStorage.setItem('data', JSON.stringify(data));
-            render(data);
-          }
-        })
-        .catch(console.error);
-    }
-
-    // Initial render from localStorage, then perform first fetch
-    render();
-    update();
-    setInterval(update, INTERVAL);
-  </script>
-
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js');
-      });
-    }
-  </script>
+<script>
+  setTimeout(() => document.getElementById('barra').style.width = '100%', 400);
+  const alvo = 3;
+  let atual = 0;
+  const el = document.getElementById('vistorias');
+  const timer = setInterval(() => {
+    atual++;
+    el.textContent = atual;
+    if (atual >= alvo) clearInterval(timer);
+  }, 900);
+</script>
 </body>
 </html>
